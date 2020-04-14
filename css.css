@@ -21,29 +21,30 @@ body {
 }
 
 /*all-tickets__column-headers*/
-.all-tickets__column-headers {
+.column-headers{
     display: flex;
     flex-direction: row;
 }
 
-.column-headers {
+.column-header {
     display: flex; 
     flex: 2;
     font-weight: 700;
     height: 80px;
     margin-right: 8px;
     margin-top: 20px;
+    box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.75);
 }
 
-.column-headers:last-of-type { /*no margin on the last element*/
+.column-header:last-of-type { /*no margin on the last element*/
     margin-right: 0;
 }
 
-.column-headers--small {
+.column-header--small {
     flex: 1;
 }
 
-.column-headers__text {
+.column-header__text {
     margin: auto 20px; /* centers the text in the div + the display: flex on the parent */ 
 }
 
@@ -53,13 +54,94 @@ body {
 
 /*all-tickets__stats*/
 
+.tickets-table{
+    display: flex;
+    flex-direction: row;
+}
+
+.ticket-table__cell {
+    display: flex; 
+    flex: 2;
+    font-weight: 700;
+    height: 48px;
+    margin-right: 8px;
+    margin-top: 8px;
+    box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.75);
+    background-color: white;
+}
+
+.ticket-table__cell:last-of-type { /*no margin on the last element*/
+    margin-right: 0;
+}
+
+.ticket-table__cell--small {
+    flex: 1;
+}
+
+.ticket-table__data {
+    margin: auto 20px; /* centers the text in the div + the display: flex on the parent */ 
+    color: black;
+    font-weight: 400;
+
+}
+
 
 /*ticket__column-headers*/
+
+.ticket-header {
+    display: flex; 
+    flex: 1;
+    font-weight: 700;
+    height: 48px;
+    margin-right: 8px;
+    margin-top: 20px;
+    box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.75);
+}
+
+.ticket-header:last-of-type { /*no margin on the last element*/
+    margin-right: 0;
+}
+
+.ticket-header__text {
+    margin: auto 20px; /* centers the text in the div + the display: flex on the parent */ 
+}
 
 
 /*ticket__stats*/
 
+.tickets-table{
+    display: flex;
+    flex-direction: row;
+}
 
+.ticket-table__cell {
+    display: flex; 
+    flex: 2;
+    font-weight: 700;
+    height: 48px;
+    margin-right: 8px;
+    margin-top: 8px;
+    box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.75);
+    background-color: white;
+}
+
+.ticket-table__cell:last-of-type { /*no margin on the last element*/
+    margin-right: 0;
+}
+
+.ticket-table__cell--small {
+    flex: 1;
+}
+
+.ticket-table__data {
+    margin: auto 20px; /* centers the text in the div + the display: flex on the parent */ 
+    color: black;
+    font-weight: 400;
+}
+
+.ticket-table__data--link {
+    color: #0F54ED;
+}
 
 
 /*colors*/
